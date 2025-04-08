@@ -37,6 +37,12 @@ Constraints:
  * @return {number[]}
  */
 var transformArray = function(nums) {
-    const uniqueSet = new Set(nums); // Use a Set to remove duplicates
-    return Array.from(uniqueSet); // Convert the Set back to an Array
+    // Step 1: Transform the array
+    const transformed = nums.map(num => (num % 2 === 0 ? 0 : 1));
+    
+    // Step 2: Sort the transformed array in non-decreasing order
+    transformed.sort((a, b) => a - b);
+    
+    // Step 3: Return the resulting array
+    return transformed;
 };

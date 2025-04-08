@@ -32,6 +32,3 @@ var canAliceWin = function(nums) {
 };
 
 // Example Usage:
-console.log(canAliceWin([1, 2, 3, 4, 10])); // Output: false
-console.log(canAliceWin([1, 2, 3, 4, 5, 14])); // Output: true
-console.log(canAliceWin([5, 5, 5, 25])); // Output: true
